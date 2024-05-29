@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	background-color: #1e1f22;
+	color: #333;
+}
+
+#container {
+	text-align: center;
+	background: #2b2d30;
+	padding: 40px;
+	border-radius: 12px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+	max-width: 400px;
+	width: 100%;
+	animation: fadeInContainer 0.5s ease;
+}
+
+h1 {
+	font-size: 2em;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	color: #fff;
+}
+
+p {
+	font-size: 1.1em;
+	color: #fff;
+}
+
+button {
+	display: block;
+	margin: 0px auto;
+	margin-top: 10px;
+	padding: 12px 25px;
+	border: none;
+	background: #1e1f22;
+	color: #fff;
+	border-radius: 25px;
+	cursor: pointer;
+	font-size: 1em;
+}
+
+button:hover {
+	background: #000;
+}
+
+#inputSection input {
+	width: calc(100% - 20px);
+	padding: 12px;
+	margin-bottom: 10px;
+	border: 1px solid #ddd;
+	border-radius: 25px;
+	font-size: 1em;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) inset;
+}
+
+#resultSection p {
+	margin: 10px 0;
+	font-size: 1em;
+	color: #fff;
+}
+
+#goBack {
+	margin-top: 20px;
+	margin-bottom: 0px;
+	background: #1e1f22;
+}
+
+#goBack:hover {
+	background: #000;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+	background: transparent;
+}
+
+footer a {
+	margin: 0 15px;
+	display: inline-block;
+	font-size: 20px;
+	color: #fff;
+}
+
+/* Animations */
+@keyframes fadeInContainer {
+	from {
+		opacity: 0;
+		transform: scale(0.95);
+	}
+
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+	}
+}
